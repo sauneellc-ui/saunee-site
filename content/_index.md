@@ -43,6 +43,24 @@ Our engagements typically follow a simple, disciplined rhythm:
 
 This keeps teams moving quickly while maintaining the level of rigor regulators and investors expect.
 
+### A typical engagement
+
+Most engagements with Saunee follow a clear, lightweight structure designed for early-stage teams:
+
+- **Week 1–2: Alignment**  
+  We review your device, intended use, clinical strategy, and current documentation to establish regulatory reality and risk.
+
+- **Month 1: Regulatory roadmap**  
+  You receive a clear, written plan covering classification, pathway, key milestones, and evidence required.
+
+- **Months 2–3: Execution**  
+  We help build the QMS, submission structure, and clinical/regulatory artifacts needed to move forward with confidence.
+
+- **Ongoing: Advisory**  
+  Continued support for FDA/TGA interactions, investor diligence, audits, and strategic decisions.
+
+This allows teams to get senior-level regulatory leadership without committing to a full-time hire too early.
+
 
 Saunee exists to give founders the same level of regulatory clarity that large medtech companies take for granted — without the overhead.
 
