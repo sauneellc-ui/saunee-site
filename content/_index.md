@@ -30,6 +30,20 @@ They have led FDA, TGA, and EU MDR programs for implantable, diagnostic, and dig
 
 Before founding Saunee, the team held senior regulatory roles at companies building Class III implantable systems and global diagnostics platforms — where execution quality, not just regulatory theory, determined success.
 
+### How we work
+
+Saunee partners closely with founders and technical teams to remove regulatory uncertainty as early as possible.
+
+Our engagements typically follow a simple, disciplined rhythm:
+
+- **Assess** — Rapidly understand your product, clinical pathway, and regulatory exposure  
+- **Design** — Define the fastest credible route through FDA, TGA, or EU MDR  
+- **Build** — Create the right documentation, QMS, and evidence as you execute  
+- **Support** — Stay engaged through submissions, audits, and investor diligence  
+
+This keeps teams moving quickly while maintaining the level of rigor regulators and investors expect.
+
+
 Saunee exists to give founders the same level of regulatory clarity that large medtech companies take for granted — without the overhead.
 
 <div class="cta">
