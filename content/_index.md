@@ -23,5 +23,5 @@ Physician-inventors, technical founders, and early teams building regulated medi
 Led global regulatory strategy for implantable and diagnostic devices across the US, EU, and APAC. Trusted by founders, engineers, and investors to make the hard calls early.
 
 <div class="cta">
-  <a href="mailto:contact@saunee.co">Get in touch</a>
+  <a href="/book">Book a call</a>
 </div>
