@@ -61,6 +61,23 @@ Most engagements with Saunee follow a clear, lightweight structure designed for 
 
 This allows teams to get senior-level regulatory leadership without committing to a full-time hire too early.
 
+### FAQ
+
+**Do you replace a full-time regulatory hire?**  
+No. Saunee is designed to provide senior regulatory leadership early — before it makes sense to hire a full-time Head of RA/QA. Many teams later bring this role in-house, often with our support.
+
+**Can you work with our existing consultants or CROs?**  
+Yes. We regularly coordinate with CROs, test labs, and specialist consultants to keep programs aligned and avoid duplication or wasted spend.
+
+**Do you handle submissions directly?**  
+We lead the strategy, structure, and preparation of submissions and work closely with your internal team or external partners to execute. This ensures accountability and quality without creating dependency.
+
+**What geographies do you support?**  
+We support FDA (US), TGA (Australia), and EU MDR pathways, and help teams choose the fastest credible route for their first market.
+
+**How are engagements structured?**  
+Most teams work with us on a monthly advisory or project basis. This keeps costs predictable and allows support to scale with the business.
+
 
 Saunee exists to give founders the same level of regulatory clarity that large medtech companies take for granted — without the overhead.
 
