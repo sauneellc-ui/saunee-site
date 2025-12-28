@@ -24,4 +24,6 @@ Led global regulatory strategy for implantable and diagnostic devices across the
 
 <div class="cta">
   <a href="/book">Book a call</a>
+  &nbsp;&nbsp;
+  <a href="mailto:contact@saunee.co">Email us</a>
 </div>
