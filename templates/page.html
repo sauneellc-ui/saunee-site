@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }} — {{ config.title }}</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      background: #ffffff;
+      color: #111;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 22px;
+    }
+
+    a {
+      color: #111;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <p><a href="/">← Back to Saunee</a></p>
+    <h1>{{ page.title }}</h1>
+    {{ page.content | safe }}
+  </div>
+</body>
+</html>
