@@ -8,7 +8,7 @@ Helping founders navigate FDA, TGA, and EU MDR with clarity, speed, and credibil
 
 ---
 
-### What I do
+### What we do
 
 - Fractional Head of RA/QA for Seed–Series B medtech companies  
 - FDA 510(k), PMA, and clinical strategy leadership  
