@@ -1,38 +1,206 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-palette="bark-lite">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title }} — {{ config.title }}</title>
+  <meta name="description" content="{{ page.title }} — Saunee Medtech Partners." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <style>
+    :root {
+      --serif: 'Instrument Serif', 'Times New Roman', serif;
+      --sans: 'Geist', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+      --mono: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+      --bg: #FBF5E6;
+      --bg-raised: #F5ECD4;
+      --ink: #1A1411;
+      --ink-soft: #3B2A20;
+      --muted: #9A8E7C;
+      --rule-soft: rgba(26,20,17,0.14);
+      --accent: #8E4427;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    html { background: var(--bg); }
     body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
-      background: #ffffff;
-      color: #111;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .topbar {
+      border-bottom: 1px solid var(--rule-soft);
+      padding: 18px clamp(20px, 4vw, 56px);
+      background: var(--bg);
+    }
+    .mark {
+      display: inline-flex; align-items: baseline; gap: 10px;
+      font-family: var(--serif);
+      font-size: 24px;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .mark-dot {
+      display: inline-block;
+      width: 8px; height: 8px; background: var(--accent); border-radius: 50%;
+      transform: translateY(-3px);
+    }
+    .mark-sub {
+      font-family: var(--sans);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: var(--muted);
+      margin-left: 6px;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 880px;
       margin: 0 auto;
-      padding: 48px 22px;
+      padding: clamp(48px, 8vw, 96px) clamp(20px, 4vw, 56px);
     }
 
-    a {
-      color: #111;
+    .back {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
       text-decoration: none;
-      border-bottom: 1px solid #ccc;
+      display: inline-block;
+      margin-bottom: 32px;
+    }
+    .back:hover { color: var(--accent); }
+
+    h1 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(36px, 5.2vw, 64px);
+      line-height: 1.02;
+      letter-spacing: -0.01em;
+      margin: 0 0 32px;
+      color: var(--ink);
+    }
+
+    h2, h3 {
+      font-family: var(--serif);
+      font-weight: 400;
+      letter-spacing: -0.005em;
+      color: var(--ink);
+      margin: 28px 0 12px;
+    }
+
+    p {
+      margin: 0 0 1em;
+      max-width: 60ch;
+      color: var(--ink-soft);
+    }
+
+    a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--rule-soft); text-underline-offset: 3px; }
+    a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+
+    /* Calendly inline widget container respects page width */
+    .calendly-inline-widget {
+      margin-top: 12px;
+      border: 1px solid var(--rule-soft);
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--bg-raised);
+    }
+
+    /* Form styles for /contact */
+    form.lead-form { display: grid; gap: 18px; max-width: 560px; margin-top: 8px; }
+    form.lead-form label {
+      display: grid; gap: 6px;
+      font-family: var(--mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+    }
+    form.lead-form input,
+    form.lead-form textarea {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--ink);
+      background: var(--bg-raised);
+      border: 1px solid var(--rule-soft);
+      border-radius: 4px;
+      padding: 12px 14px;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+    form.lead-form input:focus,
+    form.lead-form textarea:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-color: var(--accent);
+    }
+    form.lead-form button {
+      display: inline-flex; align-items: center; justify-content: center;
+      height: 42px; padding: 0 22px;
+      background: var(--ink); color: var(--bg);
+      border: 1px solid var(--ink);
+      border-radius: 999px;
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      cursor: pointer;
+      transition: background 200ms ease, color 200ms ease;
+    }
+    form.lead-form button:hover { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+
+    .cta {
+      margin-top: 24px;
+      display: flex; gap: 14px; align-items: center; flex-wrap: wrap;
+    }
+
+    footer.foot {
+      border-top: 1px solid var(--rule-soft);
+      padding: 28px clamp(20px, 4vw, 56px);
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
     }
   </style>
 </head>
 
 <body>
+  <header class="topbar">
+    <a class="mark" href="/" aria-label="Saunee home">
+      <span class="mark-dot" aria-hidden="true"></span>
+      <span>Saunee</span>
+      <span class="mark-sub">Medtech Partners</span>
+    </a>
+  </header>
+
   <div class="container">
-    <p><a href="/">← Back to Saunee</a></p>
+    <a class="back" href="/">← Back</a>
     <h1>{{ page.title }}</h1>
     {{ page.content | safe }}
   </div>
+
+  <footer class="foot">
+    <span>© {{ now() | date(format="%Y") }} Saunee Medtech Partners</span>
+    <span>saunee.co</span>
+  </footer>
 </body>
 </html>
